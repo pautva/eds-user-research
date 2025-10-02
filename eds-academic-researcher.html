@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Persona: The Academic Researcher</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background: #f8f9fa;
+            font-family: 'Courier New', monospace;
+        }
+
+        .poster {
+            max-width: 1000px;
+            margin: 0 auto;
+            border: 2px solid black;
+            padding: 40px;
+            background: white;
+        }
+
+        .header {
+            border-bottom: 2px solid black;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            display: flex;
+            gap: 30px;
+        }
+
+        .photo {
+            width: 128px;
+            height: 128px;
+            border: 2px solid black;
+            background: #f3f4f6;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            color: #6b7280;
+            flex-shrink: 0;
+        }
+
+        .header-content {
+            flex: 1;
+        }
+
+        .meta {
+            font-size: 12px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .roles {
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .tag {
+            font-size: 12px;
+            background: black;
+            color: white;
+            padding: 5px 10px;
+            display: inline-block;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section-header {
+            font-size: 14px;
+            font-weight: bold;
+            border-bottom: 1px solid black;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+
+        .keyword {
+            color: #dc2626;
+            font-weight: bold;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        .content {
+            font-size: 14px;
+        }
+
+        .content ul {
+            list-style: none;
+            padding-left: 10px;
+            margin: 0;
+        }
+
+        .content li {
+            margin-bottom: 5px;
+        }
+
+        .frustrations {
+            background: #f9fafb;
+            border: 1px solid #d1d5db;
+            padding: 15px;
+        }
+
+        .story {
+            border-left: 2px solid black;
+            padding-left: 15px;
+            padding-top: 1px;
+            padding-bottom: 1px;
+            margin-bottom: 15px;
+        }
+
+        .solutions {
+            background: black;
+            color: white;
+            padding: 15px;
+        }
+
+        .footer {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #d1d5db;
+            font-size: 12px;
+            color: #6b7280;
+            text-align: center;
+        }
+
+        @media print {
+            body {
+                padding: 0;
+                background: white;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="poster">
+        <div class="header">
+            <div class="photo">
+                <img src="assets/persona-1.png" alt="Academic Researcher" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div class="header-content">
+                <div class="meta">PERSONA_TYPE: TECHNICAL_USER</div>
+                <h1 class="title">THE ACADEMIC RESEARCHER</h1>
+                <div class="roles"><strong>ROLES:</strong> Research Fellow • Lecturer/Senior Lecturer • Professor • PhD
+                    Candidate</div>
+                <div class="tag">ENVIRONMENTAL_DATA_ACCESS_v1.0</div>
+            </div>
+        </div>
+
+        <div class="grid section">
+            <div>
+                <div class="section-header">$ cat <span class="keyword">long_term_missions</span>.txt</div>
+                <div class="content">
+                    <ul>
+                        <li>→ Publish high-impact research using multi-domain environmental data</li>
+                        <li>→ Develop novel analytical methods and models</li>
+                        <li>→ Contribute to evidence-based environmental policy</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div class="section-header">$ cat <span class="keyword">responsibilities</span>.txt</div>
+                <div class="content">
+                    <ul>
+                        <li>→ Design and execute research projects</li>
+                        <li>→ Analyse complex environmental datasets</li>
+                        <li>→ Publish peer-reviewed papers</li>
+                        <li>→ Supervise students and early career researchers</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-header">$ grep ERROR <span class="keyword">frustrations</span>.log</div>
+            <div class="frustrations content">
+                <ul>
+                    <li>✗ Datasets from different sources use incompatible formats and spatial resolutions</li>
+                    <li>✗ Significant time wasted on data discovery, cleaning, and harmonisation</li>
+                    <li>✗ Lack of programmatic access to datasets</li>
+                    <li>✗ Insufficient metadata and documentation</li>
+                    <li>✗ No clear data provenance or version control</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="grid section">
+            <div>
+                <div class="section-header">$ ls <span class="keyword">communication_channels</span>/</div>
+                <div class="content">
+                    <ul>
+                        <li>→ Academic papers and preprints</li>
+                        <li>→ APIs and Python/R libraries</li>
+                        <li>→ Technical documentation</li>
+                        <li>→ Jupyter notebooks and reproducible workflows</li>
+                        <li>→ GitHub repositories</li>
+                        <li>→ Webinars and online workshops</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div class="section-header">$ cat <span class="keyword">key_products</span>.json</div>
+                <div class="content">
+                    <ul>
+                        <li>→ APIs (RESTful and GraphQL)</li>
+                        <li>→ Python/R packages</li>
+                        <li>→ Jupyter notebooks with worked examples</li>
+                        <li>→ Harmonised, analysis-ready datasets</li>
+                        <li>→ DOIs for dataset citation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-header">$ cat <span class="keyword">user_stories</span>.md</div>
+            <div class="content">
+                <div class="story">
+                    <p><em>"I need to combine climate data, geological data, and biodiversity data for my research, but
+                            they're all in different formats and resolutions."</em></p>
+                </div>
+                <div class="story">
+                    <p><strong>As an</strong> academic researcher, <strong>I want</strong> programmatic access to
+                        harmonised, multi-domain environmental datasets <strong>so that</strong> I can focus on analysis
+                        rather than data wrangling.</p>
+                </div>
+                <div class="story">
+                    <p><strong>I want</strong> comprehensive metadata and data provenance information <strong>so
+                            that</strong> I can ensure my research is reproducible and meets journal standards.</p>
+                </div>
+                <div class="story">
+                    <p><strong>I want</strong> example code and workflows <strong>so that</strong> I can quickly get
+                        started with unfamiliar datasets.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-header">$ ./<span class="keyword">solutions</span>.sh --execute</div>
+            <div class="solutions content">
+                <ul>
+                    <li>✓ Provide standardised APIs across all data centres</li>
+                    <li>✓ Ensure datasets are spatially aligned and use common standards</li>
+                    <li>✓ Publish code examples and tutorials in Python/R</li>
+                    <li>✓ Make all data citable with DOIs</li>
+                    <li>✓ Support reproducible research practices</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer">PERSONA_v1.0 | ENVIRONMENTAL_DATA_ACCESS_RESEARCH | PRINT_READY</div>
+    </div>
+</body>
+
+</html>
