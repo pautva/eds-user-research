@@ -141,6 +141,51 @@
             line-height: 1.5;
         }
 
+        .user-traits {
+            background: #f9fafb;
+            border: 1px solid #d1d5db;
+            padding: 20px;
+            margin-bottom: 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px 30px;
+        }
+
+        .trait {
+            display: flex;
+            align-items: center;
+        }
+
+        @media (max-width: 768px) {
+            .user-traits {
+                grid-template-columns: 1fr;
+                gap: 10px;
+            }
+        }
+
+        .trait-label {
+            font-size: 12px;
+            font-weight: bold;
+            min-width: 150px;
+        }
+
+        .progress-bar {
+            display: flex;
+            gap: 2px;
+            margin-left: 20px;
+        }
+
+        .progress-block {
+            width: 14px;
+            height: 14px;
+            border: 1px solid #000;
+            background: #f3f4f6;
+        }
+
+        .progress-block.filled {
+            background: #dc2626;
+        }
+
         .footer {
             margin-top: 30px;
             padding-top: 20px;
@@ -239,6 +284,72 @@
                         <li>→ Harmonised, analysis-ready datasets</li>
                         <li>→ DOIs for dataset citation</li>
                     </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-header">$ cat <span class="keyword">user_traits</span>.json</div>
+            <div class="user-traits">
+                <div class="trait">
+                    <div class="trait-label">SCIENTIFIC_EXPERTISE</div>
+                    <div class="progress-bar">
+                        <div class="progress-block filled"></div>
+                        <div class="progress-block filled"></div>
+                        <div class="progress-block filled"></div>
+                        <div class="progress-block filled"></div>
+                        <div class="progress-block filled"></div>
+                        <div class="progress-block filled"></div>
+                        <div class="progress-block filled"></div>
+                        <div class="progress-block filled"></div>
+                        <div class="progress-block filled"></div>
+                        <div class="progress-block"></div>
+                    </div>
+                </div>
+                <div class="trait">
+                    <div class="trait-label">TECHNICAL_EXPERTISE</div>
+                    <div class="progress-bar">
+                        <div class="progress-block filled"></div>
+                        <div class="progress-block filled"></div>
+                        <div class="progress-block filled"></div>
+                        <div class="progress-block filled"></div>
+                        <div class="progress-block filled"></div>
+                        <div class="progress-block filled"></div>
+                        <div class="progress-block filled"></div>
+                        <div class="progress-block filled"></div>
+                        <div class="progress-block"></div>
+                        <div class="progress-block"></div>
+                    </div>
+                </div>
+                <div class="trait">
+                    <div class="trait-label">DATA_LITERACY</div>
+                    <div class="progress-bar">
+                        <div class="progress-block filled"></div>
+                        <div class="progress-block filled"></div>
+                        <div class="progress-block filled"></div>
+                        <div class="progress-block filled"></div>
+                        <div class="progress-block filled"></div>
+                        <div class="progress-block filled"></div>
+                        <div class="progress-block filled"></div>
+                        <div class="progress-block filled"></div>
+                        <div class="progress-block filled"></div>
+                        <div class="progress-block"></div>
+                    </div>
+                </div>
+                <div class="trait">
+                    <div class="trait-label">DOMAIN_KNOWLEDGE</div>
+                    <div class="progress-bar">
+                        <div class="progress-block filled"></div>
+                        <div class="progress-block filled"></div>
+                        <div class="progress-block filled"></div>
+                        <div class="progress-block filled"></div>
+                        <div class="progress-block filled"></div>
+                        <div class="progress-block filled"></div>
+                        <div class="progress-block filled"></div>
+                        <div class="progress-block filled"></div>
+                        <div class="progress-block filled"></div>
+                        <div class="progress-block filled"></div>
+                    </div>
                 </div>
             </div>
         </div>
