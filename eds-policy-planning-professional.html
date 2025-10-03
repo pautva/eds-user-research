@@ -4,8 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Persona: The Academic Researcher</title>
+    <title>Persona: The Policy & Planning Professional</title>
     <style>
+        :root {
+            --primary-color: #16a34a;        /* Green-600 */
+            --primary-dark: #15803d;         /* Green-700 */
+            --accent-color: #059669;         /* Emerald-600 */
+            --background-light: #f0fdf4;     /* Green-50 */
+            --border-color: var(--primary-color);
+            --keyword-color: var(--accent-color);
+            --tag-bg: var(--primary-color);
+            --solutions-bg: var(--primary-dark);
+        }
+
         body {
             margin: 0;
             padding: 20px;
@@ -16,13 +27,13 @@
         .poster {
             max-width: 1000px;
             margin: 0 auto;
-            border: 2px solid black;
+            border: 2px solid var(--border-color);
             padding: 40px;
             background: white;
         }
 
         .header {
-            border-bottom: 2px solid black;
+            border-bottom: 2px solid var(--border-color);
             padding-bottom: 20px;
             margin-bottom: 30px;
             display: flex;
@@ -32,8 +43,8 @@
         .photo {
             width: 128px;
             height: 128px;
-            border: 2px solid black;
-            background: #f3f4f6;
+            border: 2px solid var(--border-color);
+            background: var(--background-light);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -65,7 +76,7 @@
 
         .tag {
             font-size: 12px;
-            background: black;
+            background: var(--tag-bg);
             color: white;
             padding: 5px 10px;
             display: inline-block;
@@ -78,13 +89,13 @@
         .section-header {
             font-size: 14px;
             font-weight: bold;
-            border-bottom: 1px solid black;
+            border-bottom: 1px solid var(--border-color);
             padding-bottom: 5px;
             margin-bottom: 10px;
         }
 
         .keyword {
-            color: #dc2626;
+            color: var(--keyword-color);
             font-weight: bold;
         }
 
@@ -118,21 +129,21 @@
         }
 
         .story {
-            border-left: 2px solid black;
+            border-left: 2px solid var(--border-color);
             padding-left: 15px;
-            padding-top: 1px;
-            padding-bottom: 1px;
+            padding-top: 2px;
+            padding-bottom: 2px;
             margin-bottom: 15px;
         }
 
         .solutions {
-            background: #fef2f2;
-            border-left: 3px solid #dc2626;
+            background: var(--background-light);
+            border-left: 3px solid var(--border-color);
             padding: 15px 20px;
         }
 
         .persona-quote {
-            background: #dc2626;
+            background: var(--solutions-bg);
             color: white;
             padding: 15px 20px;
             margin: 20px 0 40px;
@@ -163,13 +174,12 @@
     <div class="poster">
         <div class="header">
             <div class="photo">
-                <img src="assets/persona-1.png" alt="Academic Researcher" style="width: 100%; height: 100%; object-fit: cover;">
+                <img src="assets/persona-3.png" alt="Policy & Planning Professional" style="width: 100%; height: 100%; object-fit: cover;">
             </div>
             <div class="header-content">
-                <div class="meta">PERSONA_TYPE: TECHNICAL_USER</div>
-                <h1 class="title">THE ACADEMIC RESEARCHER</h1>
-                <div class="roles"><strong>ROLES:</strong> Research Fellow • Lecturer/Senior Lecturer • Professor • PhD
-                    Candidate</div>
+                <div class="meta">PERSONA_TYPE: DECISION_MAKER</div>
+                <h1 class="title">THE POLICY & PLANNING PROFESSIONAL</h1>
+                <div class="roles"><strong>ROLES:</strong> Government Policy Advisor • Local Authority Planner • Environmental Consultant • Regulatory Officer</div>
                 <div class="tag">ENVIRONMENTAL_DATA_ACCESS_v1.0</div>
             </div>
         </div>
@@ -179,9 +189,9 @@
                 <div class="section-header">$ cat <span class="keyword">long_term_missions</span>.txt</div>
                 <div class="content">
                     <ul>
-                        <li>→ Publish high-impact research using multi-domain environmental data</li>
-                        <li>→ Develop novel analytical methods and models</li>
-                        <li>→ Contribute to evidence-based environmental policy</li>
+                        <li>→ Develop evidence-based environmental policy and regulation</li>
+                        <li>→ Support sustainable development and infrastructure planning</li>
+                        <li>→ Mitigate environmental and geological hazards</li>
                     </ul>
                 </div>
             </div>
@@ -189,28 +199,28 @@
                 <div class="section-header">$ cat <span class="keyword">responsibilities</span>.txt</div>
                 <div class="content">
                     <ul>
-                        <li>→ Design and execute research projects</li>
-                        <li>→ Analyse complex environmental datasets</li>
-                        <li>→ Publish peer-reviewed papers</li>
-                        <li>→ Supervise students and early career researchers</li>
+                        <li>→ Advise on policy development and implementation</li>
+                        <li>→ Assess environmental impacts of proposed developments</li>
+                        <li>→ Communicate evidence to non-technical stakeholders</li>
+                        <li>→ Ensure compliance with environmental regulations</li>
                     </ul>
                 </div>
             </div>
         </div>
 
         <div class="persona-quote">
-            "I need to preview the data first to check for gaps or issues. Sample data lets me run quick tests before committing."
+            "I need human support for API guidance and quick response times - under a week."
         </div>
 
         <div class="section">
             <div class="section-header">$ grep ERROR <span class="keyword">frustrations</span>.log</div>
             <div class="frustrations content">
                 <ul>
-                    <li>✗ Datasets from different sources use incompatible formats and spatial resolutions</li>
-                    <li>✗ Significant time wasted on data discovery, cleaning, and harmonisation</li>
-                    <li>✗ Lack of programmatic access to datasets</li>
-                    <li>✗ Insufficient metadata and documentation</li>
-                    <li>✗ No clear data provenance or version control</li>
+                    <li>✗ Data is too technical or lacks plain-English summaries</li>
+                    <li>✗ Difficult to assess data relevance for policy questions</li>
+                    <li>✗ No clear understanding of data limitations and uncertainties</li>
+                    <li>✗ Time-consuming to extract specific insights from complex datasets</li>
+                    <li>✗ Lack of policy-relevant data products (e.g., risk maps, summary statistics)</li>
                 </ul>
             </div>
         </div>
@@ -220,12 +230,12 @@
                 <div class="section-header">$ ls <span class="keyword">communication_channels</span>/</div>
                 <div class="content">
                     <ul>
-                        <li>→ Academic papers and preprints</li>
-                        <li>→ APIs and Python/R libraries</li>
-                        <li>→ Technical documentation</li>
-                        <li>→ Jupyter notebooks and reproducible workflows</li>
-                        <li>→ GitHub repositories</li>
-                        <li>→ Webinars and online workshops</li>
+                        <li>→ Executive summaries and policy briefs</li>
+                        <li>→ Interactive maps and visualisations</li>
+                        <li>→ Webinars and training workshops</li>
+                        <li>→ Email bulletins</li>
+                        <li>→ Dedicated helpdesk support</li>
+                        <li>→ In-person briefings</li>
                     </ul>
                 </div>
             </div>
@@ -233,11 +243,11 @@
                 <div class="section-header">$ cat <span class="keyword">key_products</span>.json</div>
                 <div class="content">
                     <ul>
-                        <li>→ APIs (RESTful and GraphQL)</li>
-                        <li>→ Python/R packages</li>
-                        <li>→ Jupyter notebooks with worked examples</li>
-                        <li>→ Harmonised, analysis-ready datasets</li>
-                        <li>→ DOIs for dataset citation</li>
+                        <li>→ Policy-relevant data products and indicators</li>
+                        <li>→ Interactive web maps with plain-English descriptions</li>
+                        <li>→ Executive summaries and briefing notes</li>
+                        <li>→ Guidance documents on data interpretation</li>
+                        <li>→ Dedicated support service</li>
                     </ul>
                 </div>
             </div>
@@ -247,21 +257,16 @@
             <div class="section-header">$ cat <span class="keyword">user_stories</span>.md</div>
             <div class="content">
                 <div class="story">
-                    <p><em>"I need to combine climate data, geological data, and biodiversity data for my research, but
-                            they're all in different formats and resolutions."</em></p>
+                    <p><em>"I need to understand the environmental implications of a proposed development, but I don't have time to become a data expert."</em></p>
                 </div>
                 <div class="story">
-                    <p><strong>As an</strong> academic researcher, <strong>I want</strong> programmatic access to
-                        harmonised, multi-domain environmental datasets <strong>so that</strong> I can focus on analysis
-                        rather than data wrangling.</p>
+                    <p><strong>As a</strong> policy advisor, <strong>I want</strong> plain-English summaries and visualisations of environmental data <strong>so that</strong> I can quickly assess policy implications without technical expertise.</p>
                 </div>
                 <div class="story">
-                    <p><strong>I want</strong> comprehensive metadata and data provenance information <strong>so
-                            that</strong> I can ensure my research is reproducible and meets journal standards.</p>
+                    <p><strong>I want</strong> pre-made data products relevant to policy decisions (e.g., flood risk maps, habitat assessments) <strong>so that</strong> I don't need to process raw data.</p>
                 </div>
                 <div class="story">
-                    <p><strong>I want</strong> example code and workflows <strong>so that</strong> I can quickly get
-                        started with unfamiliar datasets.</p>
+                    <p><strong>I want</strong> clear guidance on data limitations and appropriate use <strong>so that</strong> I can confidently use evidence in policy advice.</p>
                 </div>
             </div>
         </div>
@@ -270,11 +275,11 @@
             <div class="section-header">$ ./<span class="keyword">solutions</span>.sh --execute</div>
             <div class="solutions content">
                 <ul>
-                    <li>✓ Provide standardised APIs across all data centres</li>
-                    <li>✓ Ensure datasets are spatially aligned and use common standards</li>
-                    <li>✓ Publish code examples and tutorials in Python/R</li>
-                    <li>✓ Make all data citable with DOIs</li>
-                    <li>✓ Support reproducible research practices</li>
+                    <li>✓ Create policy-focused data products and indicators</li>
+                    <li>✓ Provide plain-English data descriptions and summaries</li>
+                    <li>✓ Develop user-friendly web map interfaces</li>
+                    <li>✓ Offer training specifically for policy professionals</li>
+                    <li>✓ Establish a dedicated support service</li>
                 </ul>
             </div>
         </div>

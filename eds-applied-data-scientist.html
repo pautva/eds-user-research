@@ -4,8 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Persona: The Academic Researcher</title>
+    <title>Persona: The Applied Data Scientist</title>
     <style>
+        :root {
+            --primary-color: #0891b2;        /* Cyan-600 */
+            --primary-dark: #0e7490;         /* Cyan-700 */
+            --accent-color: #0284c7;         /* Blue-600 */
+            --background-light: #f0f9ff;     /* Blue-50 */
+            --border-color: var(--primary-color);
+            --keyword-color: var(--accent-color);
+            --tag-bg: var(--primary-color);
+            --solutions-bg: var(--primary-dark);
+        }
+
         body {
             margin: 0;
             padding: 20px;
@@ -16,13 +27,13 @@
         .poster {
             max-width: 1000px;
             margin: 0 auto;
-            border: 2px solid black;
+            border: 2px solid var(--border-color);
             padding: 40px;
             background: white;
         }
 
         .header {
-            border-bottom: 2px solid black;
+            border-bottom: 2px solid var(--border-color);
             padding-bottom: 20px;
             margin-bottom: 30px;
             display: flex;
@@ -32,8 +43,8 @@
         .photo {
             width: 128px;
             height: 128px;
-            border: 2px solid black;
-            background: #f3f4f6;
+            border: 2px solid var(--border-color);
+            background: var(--background-light);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -65,7 +76,7 @@
 
         .tag {
             font-size: 12px;
-            background: black;
+            background: var(--tag-bg);
             color: white;
             padding: 5px 10px;
             display: inline-block;
@@ -78,13 +89,13 @@
         .section-header {
             font-size: 14px;
             font-weight: bold;
-            border-bottom: 1px solid black;
+            border-bottom: 1px solid var(--border-color);
             padding-bottom: 5px;
             margin-bottom: 10px;
         }
 
         .keyword {
-            color: #dc2626;
+            color: var(--keyword-color);
             font-weight: bold;
         }
 
@@ -118,21 +129,21 @@
         }
 
         .story {
-            border-left: 2px solid black;
+            border-left: 2px solid var(--border-color);
             padding-left: 15px;
-            padding-top: 1px;
-            padding-bottom: 1px;
+            padding-top: 2px;
+            padding-bottom: 2px;
             margin-bottom: 15px;
         }
 
         .solutions {
-            background: #fef2f2;
-            border-left: 3px solid #dc2626;
+            background: var(--background-light);
+            border-left: 3px solid var(--border-color);
             padding: 15px 20px;
         }
 
         .persona-quote {
-            background: #dc2626;
+            background: var(--solutions-bg);
             color: white;
             padding: 15px 20px;
             margin: 20px 0 40px;
@@ -163,13 +174,12 @@
     <div class="poster">
         <div class="header">
             <div class="photo">
-                <img src="assets/persona-1.png" alt="Academic Researcher" style="width: 100%; height: 100%; object-fit: cover;">
+                <img src="assets/persona-2.png" alt="Applied Data Scientist" style="width: 100%; height: 100%; object-fit: cover;">
             </div>
             <div class="header-content">
                 <div class="meta">PERSONA_TYPE: TECHNICAL_USER</div>
-                <h1 class="title">THE ACADEMIC RESEARCHER</h1>
-                <div class="roles"><strong>ROLES:</strong> Research Fellow • Lecturer/Senior Lecturer • Professor • PhD
-                    Candidate</div>
+                <h1 class="title">THE APPLIED DATA SCIENTIST</h1>
+                <div class="roles"><strong>ROLES:</strong> Data Scientist • GIS/Geospatial Analyst • Research Data Analyst • Machine Learning Engineer</div>
                 <div class="tag">ENVIRONMENTAL_DATA_ACCESS_v1.0</div>
             </div>
         </div>
@@ -179,9 +189,9 @@
                 <div class="section-header">$ cat <span class="keyword">long_term_missions</span>.txt</div>
                 <div class="content">
                     <ul>
-                        <li>→ Publish high-impact research using multi-domain environmental data</li>
-                        <li>→ Develop novel analytical methods and models</li>
-                        <li>→ Contribute to evidence-based environmental policy</li>
+                        <li>→ Deliver data-driven solutions to real-world environmental challenges</li>
+                        <li>→ Build predictive models and decision-support tools</li>
+                        <li>→ Bridge the gap between research and practical application</li>
                     </ul>
                 </div>
             </div>
@@ -189,28 +199,28 @@
                 <div class="section-header">$ cat <span class="keyword">responsibilities</span>.txt</div>
                 <div class="content">
                     <ul>
-                        <li>→ Design and execute research projects</li>
-                        <li>→ Analyse complex environmental datasets</li>
-                        <li>→ Publish peer-reviewed papers</li>
-                        <li>→ Supervise students and early career researchers</li>
+                        <li>→ Develop machine learning models and analytical pipelines</li>
+                        <li>→ Create data visualisations and dashboards</li>
+                        <li>→ Translate complex data into actionable insights</li>
+                        <li>→ Collaborate across technical and non-technical teams</li>
                     </ul>
                 </div>
             </div>
         </div>
 
         <div class="persona-quote">
-            "I need to preview the data first to check for gaps or issues. Sample data lets me run quick tests before committing."
+            "I look for open source data that's easily accessible and available for the whole region."
         </div>
 
         <div class="section">
             <div class="section-header">$ grep ERROR <span class="keyword">frustrations</span>.log</div>
             <div class="frustrations content">
                 <ul>
-                    <li>✗ Datasets from different sources use incompatible formats and spatial resolutions</li>
-                    <li>✗ Significant time wasted on data discovery, cleaning, and harmonisation</li>
-                    <li>✗ Lack of programmatic access to datasets</li>
-                    <li>✗ Insufficient metadata and documentation</li>
-                    <li>✗ No clear data provenance or version control</li>
+                    <li>✗ Environmental data isn't integrated with socio-economic or infrastructure data</li>
+                    <li>✗ Data discovery is time-consuming across multiple portals</li>
+                    <li>✗ Limited access to pre-processed, analysis-ready data</li>
+                    <li>✗ Uncertainty about data quality and fitness for purpose</li>
+                    <li>✗ Lack of cloud-optimised formats for large-scale analysis</li>
                 </ul>
             </div>
         </div>
@@ -220,12 +230,12 @@
                 <div class="section-header">$ ls <span class="keyword">communication_channels</span>/</div>
                 <div class="content">
                     <ul>
-                        <li>→ Academic papers and preprints</li>
-                        <li>→ APIs and Python/R libraries</li>
-                        <li>→ Technical documentation</li>
-                        <li>→ Jupyter notebooks and reproducible workflows</li>
-                        <li>→ GitHub repositories</li>
-                        <li>→ Webinars and online workshops</li>
+                        <li>→ Interactive dashboards and visualisations</li>
+                        <li>→ APIs and data pipelines</li>
+                        <li>→ Case studies and application notes</li>
+                        <li>→ Online training courses</li>
+                        <li>→ Slack/Teams communities</li>
+                        <li>→ Email updates on new datasets</li>
                     </ul>
                 </div>
             </div>
@@ -233,11 +243,11 @@
                 <div class="section-header">$ cat <span class="keyword">key_products</span>.json</div>
                 <div class="content">
                     <ul>
-                        <li>→ APIs (RESTful and GraphQL)</li>
-                        <li>→ Python/R packages</li>
-                        <li>→ Jupyter notebooks with worked examples</li>
-                        <li>→ Harmonised, analysis-ready datasets</li>
-                        <li>→ DOIs for dataset citation</li>
+                        <li>→ Unified search across data centres</li>
+                        <li>→ Cloud-optimised formats</li>
+                        <li>→ Pre-processed datasets with quality flags</li>
+                        <li>→ Integration guides for popular tools (QGIS, ArcGIS, PowerBI)</li>
+                        <li>→ Use case examples</li>
                     </ul>
                 </div>
             </div>
@@ -247,21 +257,16 @@
             <div class="section-header">$ cat <span class="keyword">user_stories</span>.md</div>
             <div class="content">
                 <div class="story">
-                    <p><em>"I need to combine climate data, geological data, and biodiversity data for my research, but
-                            they're all in different formats and resolutions."</em></p>
+                    <p><em>"I need to integrate environmental data with infrastructure and socio-economic data for urban planning projects, but data is scattered across different platforms."</em></p>
                 </div>
                 <div class="story">
-                    <p><strong>As an</strong> academic researcher, <strong>I want</strong> programmatic access to
-                        harmonised, multi-domain environmental datasets <strong>so that</strong> I can focus on analysis
-                        rather than data wrangling.</p>
+                    <p><strong>As an</strong> applied data scientist, <strong>I want</strong> a single search interface across multiple environmental data sources <strong>so that</strong> I can quickly find relevant datasets for client projects.</p>
                 </div>
                 <div class="story">
-                    <p><strong>I want</strong> comprehensive metadata and data provenance information <strong>so
-                            that</strong> I can ensure my research is reproducible and meets journal standards.</p>
+                    <p><strong>I want</strong> cloud-optimised, analysis-ready data formats <strong>so that</strong> I can efficiently process large datasets in my workflows.</p>
                 </div>
                 <div class="story">
-                    <p><strong>I want</strong> example code and workflows <strong>so that</strong> I can quickly get
-                        started with unfamiliar datasets.</p>
+                    <p><strong>I want</strong> clear documentation on data quality and limitations <strong>so that</strong> I can confidently use data in decision-support tools.</p>
                 </div>
             </div>
         </div>
@@ -270,11 +275,11 @@
             <div class="section-header">$ ./<span class="keyword">solutions</span>.sh --execute</div>
             <div class="solutions content">
                 <ul>
-                    <li>✓ Provide standardised APIs across all data centres</li>
-                    <li>✓ Ensure datasets are spatially aligned and use common standards</li>
-                    <li>✓ Publish code examples and tutorials in Python/R</li>
-                    <li>✓ Make all data citable with DOIs</li>
-                    <li>✓ Support reproducible research practices</li>
+                    <li>✓ Build a unified metadata catalogue searchable in plain English</li>
+                    <li>✓ Provide data in cloud-native formats</li>
+                    <li>✓ Create integration guides for industry-standard tools</li>
+                    <li>✓ Develop quality assurance frameworks</li>
+                    <li>✓ Share real-world application examples</li>
                 </ul>
             </div>
         </div>
